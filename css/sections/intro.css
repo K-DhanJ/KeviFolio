@@ -1,0 +1,27 @@
+.Intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+.content .title {
+    font-family: var(--satoshi);
+    font-size: 120px;
+    font-weight: 700;
+    
+}
+
+.Intro::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+
+    mask-image: url(ink_lv2.gif);
+    mask-size: cover;
+    mask-position: center;
+}
